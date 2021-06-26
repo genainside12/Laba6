@@ -1,0 +1,31 @@
+#include <iostream>
+#include <algorithm>
+
+
+using namespace std;
+
+
+int main() {
+	setlocale(LC_ALL, "RU");
+	int a, b, c;
+	cout << "Напишите функцию, которая возвращает наибольший из трех целочисленных\n"
+		"аргументов;\n";
+	cout << "Введите А:"; cin >> a;
+	cout << "Введите B:"; cin >> b;
+	cout << "Введите C:"; cin >> c; 
+
+	if (a > b && a > c)
+	{
+		cout << " Число a больше - " << a << endl;
+	}
+	else if (b > a && b > c)
+	{
+		cout << " Число b больше - " << b << endl;
+	}
+	else (c > a && c > b); {
+		cout << " Число c больше - "  << c << endl;
+	}
+
+	cout << "Максимальное из введеных вами чисел - " << max(a, max(b, c));
+	return 0;
+}
